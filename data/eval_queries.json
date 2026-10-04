@@ -1,0 +1,19 @@
+[
+  {"q": "שואב אבק", "expect": ["P0201", "P0208", "P0209", "P0210", "P0206"], "source": "assignment"},
+  {"q": "iPhone 16", "expect": ["P0401", "P0407", "P0413"], "source": "assignment"},
+  {"q": "אייפון", "expect": ["P0401", "P0407", "P0413"], "source": "assignment"},
+  {"q": "מתנה למישהו שאוהב לבשל", "expect": ["P0200", "P0189", "P0030", "P0100", "P0024", "P0022"], "source": "assignment"},
+  {"q": "משהו שיעזור לנקות שערות של כלב מהספה", "expect": ["P0950", "P0225", "P0218"], "source": "assignment"},
+  {"q": "blender", "expect": ["P0003", "P0004"], "source": "tuning"},
+  {"q": "מטגן אוויר", "expect": ["P0001", "P0002"], "source": "tuning"},
+  {"q": "אוזניות bluetooth", "expect": ["P0419", "P0795", "P0346", "P0426", "P0414", "P0415"], "source": "tuning"},
+  {"q": "מתנה לחובב קפה", "expect": ["P0196", "P0128", "P0142", "P0120", "P0143"], "source": "tuning"},
+  {"q": "something to keep my drinks cold on a hike", "expect": ["P0889", "P0890", "P0892", "P0845", "P0846", "P0856"], "source": "tuning"},
+  {"q": "xqzwv", "expect": [], "source": "tuning"},
+  {"q": "מכונת קפה", "expect": ["P0101", "P0102", "P0103", "P0104", "P0108", "P0109", "P0110", "P0111", "P0115"], "source": "held-out"},
+  {"q": "air purifier", "expect": ["P0245", "P0246", "P0250", "P0253", "P0255", "P0258"], "source": "held-out"},
+  {"q": "צעצוע לכלב", "expect": ["P0941", "P0938"], "source": "held-out"},
+  {"q": "מחשב נייד Apple", "expect": ["P0305", "P0306"], "source": "held-out"},
+  {"q": "headphones for sleeping", "expect": ["P0795", "P0791", "P0800"], "source": "held-out"},
+  {"q": "טלוויזיה 65 אינץ'", "expect": ["P0501", "P0508"], "source": "held-out"}
+]
