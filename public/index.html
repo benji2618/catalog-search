@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>חיפוש בקטלוג</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <main>
+    <h1>חיפוש בקטלוג</h1>
+    <form id="form" role="search">
+      <label for="q">מה מחפשים?</label>
+      <input id="q" type="search" autocomplete="off" maxlength="100" placeholder="למשל: שואב אבק">
+    </form>
+
+    <div id="examples">
+      <p>נסו לחפש:</p>
+      <ul class="chips">
+        <li><button type="button">שואב אבק</button></li>
+        <li><button type="button">iPhone 16</button></li>
+        <li><button type="button">אייפון</button></li>
+        <li><button type="button">מתנה למישהו שאוהב לבשל</button></li>
+        <li><button type="button">משהו שיעזור לנקות שערות של כלב מהספה</button></li>
+      </ul>
+    </div>
+
+    <p id="status" role="status" aria-live="polite" class="sr-only"></p>
+    <p id="notice" hidden>התוצאות מבוססות על מילות מפתח בלבד</p>
+    <p id="count" aria-hidden="true" hidden></p>
+    <div id="message" hidden></div>
+    <ul id="results" class="grid"></ul>
+  </main>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
