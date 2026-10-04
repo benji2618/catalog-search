@@ -25,6 +25,14 @@ final class EmbeddingClient
         return $vectors;
     }
 
+    /** @return float[] one unit-length vector */
+    public function embedQuery(string $text): array
+    {
+        $data = $this->request([$text], 'query');
+        if (count($data) !== 1) throw new RuntimeException('Voyage returned ' . count($data) . ' vectors for 1 query');
+        return self::normalize($data[0]['embedding']);
+    }
+
     /** @return array[] the response's "data" items (index + embedding). Retries once on 429 / 5xx / curl errors; any other failure throws immediately. */
     private function request(array $input, string $inputType): array
     {
